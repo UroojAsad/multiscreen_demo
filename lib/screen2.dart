@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screen1.dart';
 
 class screen2 extends StatelessWidget {
 
@@ -20,13 +21,20 @@ class screen2 extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: Text(
-          'THIS IS SCREEN2',
-          style: TextStyle(
-            fontWeight: FontWeight.bold,
-            color: Colors.red,
+        child: TextButton(
+          onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context){
+              return screen1();
+            }));
+          },
+          child: Text(
+              'CLICK TOGO PREVIOUS SCREEN'
           ),
-        )
+          style: TextButton.styleFrom(
+            foregroundColor: Colors.white,
+            backgroundColor: Colors.red,
+          ),
+        ),
       ),
     );
   }

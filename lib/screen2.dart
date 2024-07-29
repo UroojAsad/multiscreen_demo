@@ -1,10 +1,33 @@
 import 'package:flutter/material.dart';
 
 class screen2 extends StatelessWidget {
-  const screen2({super.key});
+
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return  Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.red,
+        centerTitle: true,
+        elevation: 10,
+        title: Text(
+          'Screen2',
+          style: TextStyle(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.bold
+          ),
+        ),
+      ),
+      body: Center(
+        child: Text(
+          'THIS IS SCREEN2',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            color: Colors.red,
+          ),
+        )
+      ),
+    );
   }
 }

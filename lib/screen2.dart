@@ -23,9 +23,8 @@ class screen2 extends StatelessWidget {
       body: Center(
         child: TextButton(
           onPressed: (){
-            Navigator.push(context, MaterialPageRoute(builder: (context){
-              return screen1();
-            }));
+            Navigator.pop(context);
+
           },
           child: Text(
               'CLICK TOGO PREVIOUS SCREEN'
